@@ -3,21 +3,34 @@
     <title>W02: Task 1</title>
   </head>
   <body>
+    <script src "vec3.js"></script>
     <script>
-    function min(a,b,c){
-        if(a<=b&&a<=c){
-	  return a;
+      var x=10,y=10,z=10;
+      var v new Vec3(x,y,z);
+    function min(v){
+        if(v.a<=v.b&&v.a<=v.c){
+	  return v.a;
  	}else if{
-	  if(b<=a&&b<=c){
-	     return b;function min(a,b,c){
-        if(a>=b&&a>=c){
-	  return a;
- 	}else if{
-	  if(b<=a&&b<=c){
-	     return b;
+	  if(v.b<=v.a&&v.b<=v.c){
+	    return v.b;
            }else return c;
         }
-    
+    function max(v){
+        if(v.a>=v.b&&v.a>=v.c){
+	  return v.a;
+ 	}else if{
+	  if(v.b>=v.a&&v.b>=v.c){
+	     return v.b;
+           }else return v.c;
+        }
+    function mid(v){
+        if((v.a<=v.b&&v.a>=v.c)||(v.a>=v.b&&v.a<=v.c)){
+	  return v.a;
+ 	}else if{
+	  if((v.b<=v.a&&v.b>=v.c)||(v.b>=v.a&&v.b<=v.c)){
+	     return v.b;
+           }else return v.c;
+        }
     </script>
   </body>
 </html>
