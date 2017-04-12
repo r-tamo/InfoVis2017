@@ -1,10 +1,10 @@
 <html>
   <head>
-    <title>W02: Exsample 01<title>
+    <title>W02: Exsample 01</title>
   </head>
   <body>
     <script>
-      docment.write("Hello World!");
+      document.write("Hello World!");
     </script>
   </body>
 </html>
