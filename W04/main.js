@@ -1,5 +1,4 @@
-<script src="three.min.js">
-    </script>
+document.write("<script src="three.min.js"></script>");
 function main()
 {
     var width = 500;
