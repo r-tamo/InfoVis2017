@@ -33,6 +33,7 @@ function main()
     }
 }
 
+
 function main2()
 {
     var width = 500;
@@ -54,15 +55,21 @@ function main2()
 
     var geometry = new THREE.BoxGeometry( 1, 1, 1 );
     var material = new THREE.MeshLambertMaterial( {
-	color: 0xffffff
-	wireframe = true
+	color: 0xffffff,
+	wireframe : true
     } );    
     var cube = new THREE.Mesh( geometry, material );
     scene.add( cube );
 
-    var light = new THREE.PointLight( 0xffffff );
+    var light = new THREE.PointLight( 0xffff50 );
     light.position.set( 1, 1, 1);
+
+    var light2 = new THREE.PointLight( 0x5000ff );
+    light2.position.set( 10, 10, 10);
+
+    
     scene.add( light );
+    scene.add( light2 );
 
     
     loop();
@@ -76,3 +83,5 @@ function main2()
         renderer.render( scene, camera );
     }
 }
+
+
